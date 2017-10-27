@@ -11,7 +11,7 @@ import android.widget.Button;
 import laligulbani.by.fragmentexample.R;
 
 
-public class FragmentShow extends Fragment {
+public class FragmentOne extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater,@Nullable ViewGroup container, Bundle savedInstanceState){

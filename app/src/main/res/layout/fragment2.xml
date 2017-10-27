@@ -4,8 +4,7 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent">
     <Button
-        android:id="@+id/look"
-        android:layout_gravity="center"
+        android:id="@+id/old_activity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/THIS_ACTIVITY"/>

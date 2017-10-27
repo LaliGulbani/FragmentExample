@@ -3,9 +3,10 @@ package laligulbani.by.fragmentexample;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
-import android.support.v4.app.FragmentManager;
+import android.view.View;
 
-import laligulbani.by.fragmentexample.fragment.FragmentShow;
+import laligulbani.by.fragmentexample.fragment.FragmentOne;
+import laligulbani.by.fragmentexample.fragment.FragmentTwo;
 
 public class MainActivity extends  FragmentActivity {
 
@@ -13,14 +14,43 @@ public class MainActivity extends  FragmentActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        (findViewById(R.id.show_hide)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
-        FragmentManager fm = getSupportFragmentManager();
-        Fragment fragment = fm.findFragmentById(R.id.fragment_container);
-        if(fragment == null){
-            fragment = new FragmentShow();
-            fm.beginTransaction()
-                    .add(R.id.fragment_container, fragment)
-                    .commit();
-        }
+                /*FragmentManager fm = getSupportFragmentManager();
+                Fragment fragment = fm.findFragmentById(R.id.fragment_container);
+                if(fragment == null){
+                    fragment = new FragmentOne();
+                    fragment = new FragmentTwo();
+                    fm.beginTransaction()
+                            .add(R.id.fragment_container, fragment)
+                            .add(R.id.fragment_container, )
+                            .commit();
+                            (findViewById(R.id.show_hide)).setText(Hide);
+                   }else{
+                            fm.beginTransaction()
+                                  .hide(fragmentOne)
+                                  .hide(fragmentTwo)
+                                  .commit();
+                                  (findViewById(R.id.show_hide)).setText(Show);
+                          */
+                android.support.v4.app.FragmentManager fragmentManager = getSupportFragmentManager();
+                FragmentOne fragmentOne = new FragmentOne();
+                FragmentTwo fragmentTwo = new FragmentTwo();
+
+                fragmentManager.beginTransaction()
+                .add(R.id.fragment_container, fragmentOne)
+                .add(R.id.fragment_container,fragmentTwo)
+                .commit();
+
+            }
+        });
+
+
+    }
+
+    private void showFragment(Fragment fragment){
+
     }
 }
