@@ -16,7 +16,7 @@ public class FragmentShow extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater,@Nullable ViewGroup container, Bundle savedInstanceState){
         View view = inflater.inflate(R.layout.fragment1, container, false);
-        Button show = (Button)view.findViewById(R.id.button_show);
+        Button show = (Button)view.findViewById(R.id.new_activity);
         show.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

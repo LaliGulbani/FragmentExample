@@ -5,19 +5,17 @@
     android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
     <Button
-        android:id="@+id/new_activity"
+        android:layout_margin="150sp"
+        android:id="@+id/show_hide"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_margin="15sp"
-        android:text="@string/NEW_ACTIVITY"/>
+        android:text="@string/SHOW"/>
 
-    <Button
-        android:id="@+id/look"
-        android:layout_gravity="center"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/THIS_ACTIVITY"/>
+</RelativeLayout>
+
 </LinearLayout>
