@@ -2,6 +2,8 @@
     <string name="app_name">FragmentExample</string>
     <string name="SHOW">Show</string>
     <string name="HIDE">Hide</string>
-    <string name="NEW_ACTIVITY">Start new Activity</string>
-    <string name="THIS_ACTIVITY">Start this Activity</string>
+    <string name="FRAGMENT1">Fragment 1</string>
+    <string name="FRAGMENT2">Fragment 2</string>
+    <string name="NEW_ACTIVITY">New activity</string>
+    <string name="THIS_ACTIVITY">This Activity</string>
 </resources>

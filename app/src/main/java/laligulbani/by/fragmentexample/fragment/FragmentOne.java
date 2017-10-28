@@ -20,7 +20,8 @@ public class FragmentOne extends Fragment {
         show.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                //Intent intent = new Intent(MainActivity.class, Main2Activity.class);
+                //startActivity(intent);
             }
         });
     return view;
