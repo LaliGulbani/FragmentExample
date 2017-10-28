@@ -8,19 +8,23 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import laligulbani.by.fragmentexample.MainActivity;
 import laligulbani.by.fragmentexample.R;
 
 
 public class FragmentTwo extends Fragment {
     @Nullable
     @Override
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState){
+    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
         View view_one = inflater.inflate(R.layout.fragment2, container, false);
-        Button old = (Button)view_one.findViewById(R.id.old_activity);
+        Button old = (Button) view_one.findViewById(R.id.old_activity);
         old.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                if (getActivity() != null) {
+                    MainActivity mb = (MainActivity) getActivity();
+                    mb.oldActivity();
+                }
             }
         });
         return view_one;
