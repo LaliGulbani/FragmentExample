@@ -4,6 +4,10 @@
     <string name="HIDE">Hide</string>
     <string name="FRAGMENT1">Fragment 1</string>
     <string name="FRAGMENT2">Fragment 2</string>
-    <string name="NEW_ACTIVITY">New activity</string>
+    <string name="NEW_ACTIVITY">Service Activity</string>
     <string name="THIS_ACTIVITY">This Activity</string>
+    <string name="start_service">Start Service</string>
+    <string name="send_msg_to_service">Send msg to service</string>
+    <string name="welcome_to_service">Welcome to Service</string>
+    <string name="msg_to_send">msg to send</string>
 </resources>

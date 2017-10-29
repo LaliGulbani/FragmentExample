@@ -43,14 +43,12 @@ public class MainActivity extends FragmentActivity {
             @Override
             public void onClick(View v) {
                 showFragment(mfragmentOne);
-
             }
         });
 
         (findViewById(R.id.show_fragment2)).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 showFragment(mfragmentTwo);
             }
 
